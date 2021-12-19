@@ -7,5 +7,5 @@ import retrofit2.Call
  * Created by Ali Ahmed, mail: aliahmedaiub@gmail.com
  */
 interface APIHelper {
-    fun getCreditScore(): Call<BaseResponse>
+     fun getCreditScore(): Call<BaseResponse>
 }

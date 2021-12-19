@@ -7,5 +7,5 @@ import retrofit2.http.Query
 
 interface ApiInterface {
     @GET(URL.GET_CREDIT_SCORE)
-    suspend fun getCreditScore(): Call<BaseResponse>
+    fun getCreditScore(): Call<BaseResponse>
 }

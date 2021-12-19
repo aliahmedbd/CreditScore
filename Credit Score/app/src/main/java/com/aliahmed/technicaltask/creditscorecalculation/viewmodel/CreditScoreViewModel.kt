@@ -14,12 +14,12 @@ import retrofit2.Response
 import javax.inject.Inject
 
 @HiltViewModel
-class CreditScoreViewModel @Inject constructor(private val apiHelper: APIHelper) : ViewModel() {
+class CreditScoreViewModel @Inject constructor(private val apiHelper: APIHelper): ViewModel() {
 
     private val _response = MutableLiveData<APIResponse<BaseResponse>>()
     val response: LiveData<APIResponse<BaseResponse>> = _response
 
-    fun getCreditScore() {
+    suspend fun getCreditScore() {
         _response.postValue(APIResponse.loading())
         apiHelper.getCreditScore()
             .enqueue(object : Callback<BaseResponse> {

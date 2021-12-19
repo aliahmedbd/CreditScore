@@ -1,5 +1,6 @@
 package com.aliahmed.technicaltask.creditscorecalculation
 
+import com.aliahmed.technicaltask.creditscorecalculation.network.APIHelper
 import com.aliahmed.technicaltask.creditscorecalculation.network.ApiHelperImpl
 import com.aliahmed.technicaltask.creditscorecalculation.network.ApiInterface
 import com.aliahmed.technicaltask.creditscorecalculation.network.URL
@@ -48,5 +49,5 @@ class ApplicationComponent {
 
     @Provides
     @Singleton
-    fun provideAPIHelper(apiInterface: ApiInterface) = ApiHelperImpl(apiInterface)
+    fun provideAPIHelper(apiInterface: ApiInterface) : APIHelper = ApiHelperImpl(apiInterface)
 }
