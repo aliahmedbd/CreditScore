@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">CreditScoreCalculation</string>
+    <string name="logo_of_the_application">logo</string>
+
+    <string name="error_something_went_wrong">Something went wrong</string>
+    <string name="not_responding">Not responding</string>
+    <string name="request_time_out">Time out</string>
+    <string name="please_try_again_later">Please, try again later</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="check_internet_connection">Please, check internet connection</string>
+    <string name="too_many_request">Too many request</string>
+    <string name="request_not_found">Request not found</string>
 </resources>
