@@ -1,6 +1,7 @@
 package com.aliahmed.technicaltask.creditscorecalculation.network
 
 import com.aliahmed.technicaltask.creditscorecalculation.model.BaseResponse
+import retrofit2.Call
 import javax.inject.Inject
 
 /**
@@ -8,7 +9,7 @@ import javax.inject.Inject
  */
 class ApiHelperImpl @Inject constructor(private val apiService: ApiInterface) : APIHelper {
 
-    override suspend fun getCreditScore(): BaseResponse {
+    override suspend fun getCreditScore(): Call<BaseResponse> {
         return apiService.getCreditScore()
     }
 

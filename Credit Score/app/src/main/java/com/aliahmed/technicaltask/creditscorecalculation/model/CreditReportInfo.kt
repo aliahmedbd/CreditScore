@@ -3,7 +3,6 @@ package com.aliahmed.technicaltask.creditscorecalculation.model
 import com.google.gson.annotations.SerializedName
 
 data class CreditReportInfo (
-
 	@SerializedName("score") val score : Int,
 	@SerializedName("scoreBand") val scoreBand : Int,
 	@SerializedName("clientRef") val clientRef : String,
