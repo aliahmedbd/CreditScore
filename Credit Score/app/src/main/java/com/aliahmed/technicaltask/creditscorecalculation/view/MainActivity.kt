@@ -12,6 +12,7 @@ import androidx.lifecycle.lifecycleScope
 import com.aliahmed.technicaltask.creditscorecalculation.R
 import com.aliahmed.technicaltask.creditscorecalculation.databinding.ActivityMainBinding
 import com.aliahmed.technicaltask.creditscorecalculation.model.Status
+import com.aliahmed.technicaltask.creditscorecalculation.util.CreditScoreUtil
 import com.aliahmed.technicaltask.creditscorecalculation.util.showError
 import com.aliahmed.technicaltask.creditscorecalculation.viewmodel.CreditScoreViewModel
 import dagger.hilt.EntryPoint
@@ -49,10 +50,12 @@ class MainActivity : AppCompatActivity() {
                                 binding.txtCreditScore.text = data.creditReportInfo.score.toString()
                                 binding.txtCreditScoreBottom.text =
                                     "Out of ${data.creditReportInfo.maxScoreValue}"
-                                val creditScore = data.creditReportInfo.score
-                                val max = data.creditReportInfo.maxScoreValue
-                                val progress = creditScore.toFloat() / max.toFloat()
-                                binding.circularProgressBar.progress = progress.toFloat() * 100
+
+                                binding.circularProgressBar.progress =
+                                    CreditScoreUtil.calculateProgress(
+                                        data.creditReportInfo.score,
+                                        data.creditReportInfo.maxScoreValue
+                                    )
                                 binding.txtStatus.text = "Status : ${data.accountIDVStatus}"
                                 binding.txtScoreDescription.text =
                                     data.creditReportInfo.equifaxScoreBandDescription
@@ -105,7 +108,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        super.onBackPressed()
         showExitDialog();
     }
 

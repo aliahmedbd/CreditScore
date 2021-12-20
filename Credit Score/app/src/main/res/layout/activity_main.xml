@@ -19,17 +19,17 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:orientation="vertical"
-                android:visibility="gone"
+                android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="@+id/textView"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:shimmer_duration="800">
 
-                <!-- Adding 7 rows of placeholders -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/white"
                     android:orientation="vertical">
 
                     <include layout="@layout/layout_placeholder" />
@@ -95,7 +95,7 @@
                 android:id="@+id/txtCreditScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="327"
+                android:text="..."
                 android:textColor="@color/color_primary_accent"
                 android:textSize="24sp"
                 android:textStyle="bold"
@@ -107,7 +107,7 @@
                 android:id="@+id/txtCreditScoreBottom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="out of 700"
+                android:text="out of ..."
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
