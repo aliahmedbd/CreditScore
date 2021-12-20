@@ -6,6 +6,8 @@ Here is the screenshots of the application:
 
 <img src="https://github.com/aliahmedbd/CreditScoreTechnicalTask/blob/main/Screenshot%202021-12-19%20at%205.45.34%20PM.png" alt="" data-canonical-src="https://github.com/aliahmedbd/CreditScoreTechnicalTask/blob/main/Screenshot%202021-12-19%20at%205.45.34%20PM.png" width="200" height="400" />  <img src="https://github.com/aliahmedbd/CreditScoreTechnicalTask/blob/main/Screenshot%202021-12-19%20at%205.45.12%20PM.png" alt="" data-canonical-src="https://github.com/aliahmedbd/CreditScoreTechnicalTask/blob/main/Screenshot%202021-12-19%20at%205.45.12%20PM.png" width="200" height="400" /> 
 
+APK link: https://github.com/aliahmedbd/CreditScoreTechnicalTask/blob/main/app-debug.apk
+
 
 ## Application Flow
 
